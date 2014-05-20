@@ -1,0 +1,363 @@
+/* Star-Input für Mobile */
+div.starinput {
+   margin-right: 7px
+}
+
+/* Tabelle in der Tabelle */
+.table-left {
+   width: 60%;
+   float: left;
+}
+.table-right {
+   width: 40%;
+   float: right;
+}
+
+.overhead{
+	background-color: #e30613; 
+}
+
+/* Responsive Layout */
+@media all and (min-width: 650px) {
+   .content-list {
+      width: 35%;
+      float: left;
+   }
+   .content-details {
+      width: 60%;
+      float: right;
+   }
+}
+
+.ui-bar-b h1{
+  background-color: #e30613; 
+}
+/* -----------------------------------------------------
+------------------------ global ------------------------
+----------------------------------------------------- */
+
+
+/* acts as body of page */
+.ui-page, .ui-body-d, .ui-body-d input, .ui-body-d select, .ui-body-d textarea, .ui-body-d button {
+font-family: "Arial";
+font-size: 14px;
+}
+
+
+/* nav buttons when active */
+
+
+/* global headers */
+h1, h2, h3 {
+font-family: "Trebuchet MS";
+font-size: 13px;
+}
+
+
+/* sub headings */
+h2 {
+text-transform: uppercase;
+letter-spacing: 3px;
+padding-bottom: 4px;
+border-bottom: 1px solid #DDD;
+}
+
+
+/* global links */
+a {
+text-decoration: none;
+color:#0B7272;
+}
+
+
+/* link normal font-weight */
+.ui-body-c .ui-link, .ui-body-c .ui-link:visited {
+font-weight: normal;
+color:#0B7272;
+}
+
+
+/* global link hover */
+.ui-body-c .ui-link:hover {
+color:#333;
+}
+
+
+/* container for img of me */
+#me {
+width:190px;
+height:181px;
+position:relative;
+margin:0 auto;
+}
+
+
+/* img properties of me */
+.myself {
+width:100%;
+height:100%;
+position:absolute;
+z-index:0;
+}
+
+/* container margins for normal image of me */
+#me.normal {
+margin: 0 auto -45px auto; 
+}
+
+
+/* contianer margins for upside down image of me */
+#me.flipped {
+margin: -65px auto 0 auto;
+}
+
+
+/* index link container */
+#me h1 {
+background: black;
+letter-spacing: .5em;
+text-transform: uppercase;
+font-size: 8px;
+text-align: center;
+padding:5px 0;
+display: inline-block;
+margin:37px 0 0 43px;
+position:absolute;
+z-index:1;
+text-shadow:none;
+}
+
+
+/* margins for flipped h1 container */
+#me.flipped h1 {
+margin:127px 0px 0px 43px;
+}
+
+
+/* index link container hover */
+#me h1:hover {
+background: #fff;
+outline:1px solid black;
+}
+
+
+/* brett hayes index link */
+#me a {
+color:white;
+padding:5px 10px;
+}
+
+
+/* brett hayes index link hover */
+#me a:hover {
+color:#0b7272;
+}
+
+
+/* line height for all paragraphs */
+p {
+line-height: 22px;
+}
+
+
+/* borders for bottom of pages to match headers */
+#about_brett, #portfolio, #sendmail {
+border-bottom:1px solid #ddd;
+}
+
+
+/* adds a big border with box shadows */
+.bigborder {
+margin-right:15px;
+border: 10px solid rgba(255, 255, 255, 1);
+-moz-box-shadow: 0px 1px 7px rgba(0, 0, 0, .5);
+-webkit-box-shadow: 0px 1px 7px rgba(0, 0, 0, .5);
+box-shadow: 0px 1px 7px rgba(0, 0, 0, .5);
+display: block;
+}
+
+
+#footer {
+font-size: 12px;
+}
+
+
+
+/* ----------------------------------------------------
+------------------------ index ------------------------
+---------------------------------------------------- */
+
+/* content container, excludes header */
+#content {
+min-width: 280px;
+max-width: 480px;
+margin:0 auto;
+}
+
+
+/* banner container */
+#banner {
+position: relative;
+margin-bottom:40px;
+}
+
+
+#banner img {
+width:100%;
+}
+
+
+/* banner intro paragraph */
+#banner p {
+position: absolute;
+top:0px;
+left:0px;
+right:0px;
+width:200px;
+margin:0 auto;
+padding:10px;
+color:#0B7272;
+text-shadow: 0px 1px 0px #1AD3D4;
+font-family: "Times New Roman";
+text-align: center;
+font-size: 20px;
+}
+
+
+/* banner paragraph links */
+#banner p a {
+color: white;
+text-shadow: 0px -1px 0px #CCC;
+font-style: italic;
+text-decoration: none;
+}
+
+
+/* banner paragraph hover links */
+#banner p a:hover {
+color:#eaeaea;
+text-shadow: 0px -1px 0px #999;
+}
+
+
+/* keeps blurb links to default active styles */
+#blurb .ui-btn-active {
+background:#ffffff;
+border: 1px solid #ccc;
+}
+
+
+/* keeps p's in blurb links to default active styles */
+.ui-btn-active p {
+color: #333;
+}
+
+
+/* allows for more text in list view */
+.ui-li-desc {
+font-family: "Times New Roman";
+font-size: 14px;
+white-space: normal;
+}
+
+
+/* list view headings */
+.ui-li-heading {
+font-family: "Trebuchet MS";
+text-transform: uppercase;
+margin:5px 0 0 14px;
+letter-spacing: 3px;
+font-size: 14px;
+border:none;
+}
+
+
+
+/* ----------------------------------------------------
+------------------------ about ------------------------
+---------------------------------------------------- */
+
+/* coloured image of myself */
+#about_brett img {
+float: left;
+}
+
+
+
+/* ----------------------------------------------------
+------------------------ work -------------------------
+---------------------------------------------------- */
+
+/* removes li indent and bullets */
+#portfolio li {
+list-style: none;
+margin:40px 0 40px -40px;
+}
+
+/* mini description in title */
+#portfolio h3 em {
+font-family: "Times New Roman";
+font-weight: normal;
+color: rgba(0, 0, 0, .4);
+text-transform: lowercase;
+margin: 0 0 0 15px;
+}
+
+/* resize images upon screen resoultion change */
+#portfolio img {
+min-width:50%;
+width: 90%;
+margin: 0 auto;
+}
+
+/* add's a strikethrough for broken links */
+.crossout {
+text-decoration: line-through;
+}
+
+
+
+/* -------------------------------------------------------
+------------------------ contact -------------------------
+------------------------------------------------------- */
+
+/* properties within memo collapsible div */
+.ui-collapsible-content .memo {
+font-style: italic;
+line-height: 35px;
+}
+
+/* properties for input fields */
+.memo input.ui-input-text, .memo textarea.ui-input-text {
+display: inline;
+width: inherit;
+font-size: 10px;
+}
+
+/* all ui buttons */
+form .ui-btn, form .ui-select {
+display: inline-block;
+height:2em;
+min-height:50%;
+margin:-8px 5px;
+line-height:10px;
+}
+
+/* active colour of any select list button */
+form  .ui-select .ui-btn-active {
+border: 1px solid #CCCCCC;
+font-weight:bold;
+}
+
+/* width of any select list button */
+form .ui-select .ui-btn {
+width:125px;
+}
+
+/* button down colour of send message */
+form .ui-btn-down-d {
+color:#0B7272;
+}
+
+
+
