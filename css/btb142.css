@@ -74,8 +74,8 @@ div.ui-controlgroup-label {
 .ui-btn,
 label.ui-btn {
 	font-weight: bold;
-	border-width: 1px;
-	border-style: solid;
+	border-width: 0px;
+	/* border-style: solid; */
 }
 .ui-btn:link {
 	text-decoration: none !important;
@@ -622,7 +622,7 @@ html head + body .ui-btn.ui-btn-c:visited {
 	background-color: #f6f6f6 /*{c-bup-background-color}*/;
 	border-color: #dddddd /*{c-bup-border}*/;
 	color: #333333 /*{c-bup-color}*/;
-	text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #f3f3f3 /*{c-bup-shadow-color}*/;
+	text-shadow: 0 /*{c-bup-shadow-x}*/ 0px /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #f3f3f3 /*{c-bup-shadow-color}*/;
 }
 /* Button hover */
 .ui-page-theme-c .ui-btn:hover,
